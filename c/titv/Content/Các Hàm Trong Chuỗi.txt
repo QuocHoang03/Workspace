@@ -1,0 +1,10 @@
+-	strlen(s): Độ dài chuỗi - length
+-	strcat(s1,s2): Nối chuỗi - concatenate
+-	strcpy(s cần copy, s): Copy chuỗi
+-	strcmp(s1,s2): So sánh 2 chuỗi - compare
++	Bằng"0"/ S1<S2"-1"/ S1>S2"1"
+-	strupr(s): Chuyển sang in hoa - uppercase
+-	strlwr(s): Chuyển sang in thường - lowercase
+-	strrev(s): Đảo ngược chuỗi - reverse
+-	strchr(chuỗi, 'kí tự cần tìm'): Tìm kiếm kí tự trong chuỗi - character
+-	strstr(chuỗi, chuỗi_con): Tìm chuỗi trong chuỗi
