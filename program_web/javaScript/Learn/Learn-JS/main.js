@@ -1,1 +1,1 @@
-console.log(document);
+alert(111)

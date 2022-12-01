@@ -8,39 +8,38 @@ html{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.main{
-    margin: 10% 25%;
-}
-
-/* .main{
+body{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    height: 900px;
     width: 100%;
-    min-height: 700px;
-} */
+}
 
-/* .btn{
-    align-self: center;     Canh Giữa dùng cho item
-} */
+body>div{
+    margin: auto;
+}
 
 /* Block */
-
 .btn{
-    display: inline-block;
-    text-decoration: none;
-    background-color: transparent;
     border: none;
     outline: none;
     color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    background-color: transparent;
     padding: 12px 48px;
     border-radius: 50px;
     cursor: pointer;
     min-width: 120px;
-
-    /* hiệu ứng hover */
     transition: opacity .2s ease;
+}
+
+.btn--size-s{
+    padding: 8px 32px;
+}
+
+.btn--size-l{
+    padding: 16px 56px;
 }
 
 .btn:hover{
@@ -59,21 +58,11 @@ html{
     background-color: #ffb702;
 }
 
-.btn--denger{
+.btn--danger{
     background-color: #ff623d;
 }
 
-/* .btn--disabled{
-    opacity: 0.5 !important;
+.btn--disabled{
+    opacity: 0.5 !important;    
     cursor: default;
-} */
-
-.btn--size-s{
-    padding: 8px 40px;
-}
-/* .btn--size-m{
-    
-} */
-.btn--size-l{
-    padding: 16px 56px;
 }

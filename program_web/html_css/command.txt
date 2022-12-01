@@ -63,7 +63,12 @@ h3, h4 {
 * hiển thị tên class bên cạnh mỗi đoạn văn
 * trên giao diện.
 */
+
+.btn + .btn : css phía sau
+
+
 [class]::after {
     /* Bạn có thể comment dòng dưới đây để biết tác dụng của nó */
     content: " ("  attr(class) ")";
 }
+collectui

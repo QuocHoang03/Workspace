@@ -1,0 +1,68 @@
+========== String ==========
+keyword : javaScrip string methods
+length : Độ dài chuỗi
+indexOf : tìm vị trí kí tự trong chuỗi
+lastIndexOf : tìm vị trí kí tự trong chuỗi ngược
+search : tìm kiếm theo biểu thức chính quy
+slice : cut chuỗi
+replace : thay thế
+/string/g : biểu thức chính quy
+toUpperCase : viết hoa
+toLowerCase : viết thường
+trim : cắt space dư 2 đầu
+split : chuyển chuỗi sang array
+charAt : lấy kí tự trong chuỗi
+
+========== Number ==========
+keyword : javaScrip number methods
+Number.isFinite() : Xác định xem giá trị đã cho có phải là số hữu hạn hay không. Trả về boolean
+Number.isInteger() : Xác định xem giá trị đã cho có phải là số nguyên hay không. Trả về boolean
+Number.parseFloat() : Chuyển đổi chuỗi đã cho thành một số dấu phẩy động
+Number.parseInt() : Chuyển đổi chuỗi đã cho thành một số nguyên
+Number.prototype.toFixed() : Chuyển đổi và trả về chuỗi đại diện cho số đã cho, có số chữ số chính xác sau dấu thập phân
+Number.prototype.toString() : Chuyển đổi và trả về số đã cho dưới dạng chuỗi
+isNaN : kiểm tra giá trị là NaN
+toString : chuyển number sáng string
+toFixed : lấy số thập phân
+
+========== Array ==========
+keyword : javaScrip array methods
+isArray : kiểm tra có phải là array
+length : kiểm tra độ dài mảng
+toString : chuyển kiểu dữ liệu array sang string
+join : chuyển kiểu dữ liệu array sang string có thay đổi space
+pop : xoá phần tử cuối mảng và trả về phần tử đã xoá
+push : thêm phần tử cuối mảng
+shift : xoá phần tử đầu mảng và trả về phần tử đã xoá
+unshift : thêm phần tử đầu mảng
+splice : xoá và chèn phần tử theo index
+concat : nối mảng
+slice : cắt mảng
+
+========== Array 2 ==========
+forEach() : duyệt qua phần tử của mảng
+every() : kiểm tra tất cả phần tử mảng phải thoả đều kiện (return boolean)
+some() : kiểm tra tất cả phần tử mảng chỉ cần 1 phần tử thoả đều kiện (return boolean)
+find() : tìm kiếm 1 phần tử
+filter() : tìm kiếm tất cả phần tử
+map() : thay đổi element của 1 array
+
+========== Object ==========
+keyword : javaScrip array methods
+keyword : javaScrip date object mozilla
+delete : xoá phần tử 
+prototype : phần tử vào constructor
+
+===== math object=====
+Math.PI : trả lại số pi
+Math.round() : làm tròn số
+Math.abs() : giá trị tuyệt đối
+Math.ceil() : làm tròn trên
+Math.floor() : làm tròn dưới
+Math.random() : trả về số thập phân nhỏ hơn 1
+Math.min() : số nhỏ nhất
+Math.max() : số lớn nhất
+
+========== Loop ==========
+For/in : lặp qua key (array, object, string)
+For/of : lặp qua value (array, string)
