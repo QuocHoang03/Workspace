@@ -1,0 +1,63 @@
+.kichthuoc{
+    width: 200px   ;
+}
+.doimau{
+    background-color: violet !important;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    transition: 1s all;
+}
+.dichuyen{
+    transform: translateX(500px);
+    transition: 1s all;
+    background-color: red;
+}
+.menu{
+    width: 100vw;
+    height: 50px;
+    background-color: brown;
+}
+.menu .dangnhap{
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.formdn{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(128, 128, 128, 0.384);
+    position: fixed;
+    top : 0;
+    z-index: 5;
+    visibility: hidden;
+}
+.formdn.hienform{
+    visibility: visible;
+    background-color: black;
+    transition: 1s all;
+
+}
+.formdn form{
+    width: 400px;
+    height: auto;
+    border: 2px solid darkblue;
+    border-radius: 10px;
+    padding: 15px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    background-color: aqua;
+    
+}
+
+.formdn form input{
+    width: 90%;
+    margin: 5px;
+
+}

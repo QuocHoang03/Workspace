@@ -66,3 +66,57 @@ Math.max() : số lớn nhất
 ========== Loop ==========
 For/in : lặp qua key (array, object, string)
 For/of : lặp qua value (array, string)
+
+========== DOM ==========
+
+===== Get element methods =====
+ID : getElementById
+class : getElementsByClassName
+tag : getElementsByTagName
+CSS selector : querySelector,querySelectorAll
+HTML collection : ....
+
+===== DOM Attribute =====
+id,className,href
+setAttribute() : thêm attribute
+getAttribute() : lấy ra attribute
+
+===== DOM Text =====
+innerText : get và set text
+textContent : get và set text lấy nguyên block
+innerHTML : lấy ra con
+outerHTML : lấy ra chính nó và con
+
+===== DOM Node properties =====
+className : lấy ra class
+id : lấy ra attribute id
+innerHTML
+innerText
+textContent
+clientHeight : kích thước chiều cao
+clientWidth : kích thước chiều dài
+clientLeft : trục x toạ độ
+clientTop : trục y toạ độ
+contenteditable : chỉnh sửa nội dung như thẻ input
+autofocus : kích hoạt con trỏ chuột nháy trong ô input
+autocapitalize : tự động viết hoa
+baseURI : trả về url hiện tại
+childElementCount : điếm phần tử con là elementNode
+childNodes : điếm cả text và element
+children : trả về phần tử con là elementNode
+classList : quản lý attribute class của 1 element
+draggable : liên quan đến kéo thả
+firstChild : lấy ra node đầu tiên
+firstElementChild : lấy ra element đầu tiên
+lastChild : lấy ra node cuối cùng
+lastElementChild : lấy ra element cuối cùng
+hidden : ẩn hiện
+localName : element hiện tại
+nextSibling : trả về node tiếp theo
+nextElementSibling : trả về element tiếp theo
+nodeType : 1-elementNode / 2-attributeNode / 3-textNode
+offsetParent : thẻ cha
+ownerDocument : element đang nằm trong tài liệu sở hữu nào
+
+===== DOM CSS =====
+Object.assign(element.style,{}) : hợp nhất các style
