@@ -1,0 +1,36 @@
+========== Scanner ==========
+nextBoolean() : Đọc một giá trị boolean từ bàn phím
+nextByte() : Đọc một giá trị byte từ bàn phím
+nextDouble() : Đọc một giá trị double từ bàn phím
+nextFloat() : Đọc một giá trị float từ bàn phím
+nextInt() : Đọc một giá trị int từ bàn phím
+nextLine() : Đọc một giá trị string từ bàn phím
+nextLong() : Đọc một giá trị long từ bàn phím
+nextShort() : Đọc một giá trị short từ bàn phím
+
+========== Ép kiểu ==========
+(New Type) value : chuyển đổi dữ liệu cơ bản
+(New Class) object : chuyển đổi kiểu cho đối tượng
+int intObject = new integer(32) : chuyển đổi kiểu dữ liệu cơ bản sang đố tượng và ngược lại
+
+========== Math ==========
+https://www.titv.vn/2021/05/16-lop-math-random-va-cac-ham-toan-hoc.html
+E : cơ số của logarit tự nhiên (2.71828)
+PI : giá trị đại diện cho pi (3.14159)
+Math.abs(a) : trả về giá trị tuyệt đối
+Math.min(a,b) : tìm min
+Math.max(a,b) : tìm min
+Math.ceil(a) : làm tròn trên
+Math.floor(a ) : làm tròn dưới
+Math.sqrt(a) : tìm căn
+Math.pow(a) : tìm mũ
+Math.round(a) : làm tròn lấy phần nguyên
+Math.round((a*100.0)/100.0) : lấy 2 số thập phân (mẹo)
+
+========== Class ==========
+abstract : lớp trừu tượng
+final : lớp hằng  có lớp con không kế thừa
+extends SuperClass : kế thằ lớp cha SuperClass
+implements Interfaces : giao diện dược cài đặt bởi class
+Menber variables Declarations : khai báo các biến
+Methods Declarations : khai báo các phương thức

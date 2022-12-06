@@ -75,6 +75,8 @@ class : getElementsByClassName
 tag : getElementsByTagName
 CSS selector : querySelector,querySelectorAll
 HTML collection : ....
+:first-child : lấy phần tử đầu
+:nth-child(index) : lấy phần tử tuỳ ý
 
 ===== DOM Attribute =====
 id,className,href
@@ -120,3 +122,36 @@ ownerDocument : element đang nằm trong tài liệu sở hữu nào
 
 ===== DOM CSS =====
 Object.assign(element.style,{}) : hợp nhất các style
+
+===== ClassList property =====
+element.classList.
+length : kiểm tra độ dài
+value : trả về chuỗi
+add : thêm class vào element
+contains : kiểm tra 1 class có nằm trong element trả về true false
+remove : xoá 1 class khỏi element
+toggle : có thì thêm không có thì xoá
+
+===== DOM EVENT =====
+1.Attribute events : sử dụng trực tiếp
+2.Assign event using the element node : gán
+e.target.value : lấy giá trị thẻ input text,select>option
+e.target.checked : lấy giá trị true false thẻ input checkbox
+e.which : lấy ra mã phím
+
+click : xảy ra khi bấm vào
+change : thay đổi nội dung thẻ input user ,...
+input : thay đổi nội dung thẻ input user ,... ngay khi gõ
+coppy : khi thực hiện hành động coppy
+cut : cắt trên website
+dblclick : double click
+drag : liên quan đến kéo thả
+focus : khi tập trung con trỏ chuột vào thẻ buttom hoặc thẻ input nào đó
+keydown : khi bấm phím trên bàn phím xuống
+keyup : khi nhất phím trên bàn phím lên
+keypress : giữ phím
+mouseover : như hover khi đưa chuột vào
+mouseout : như hover khi đưa chuột ra
+mouseup : như hover khi click chuột
+resize : khi thây đổi kích thước trình duyệt hoặc kích thước element
+scroll : khi lăn chuột
