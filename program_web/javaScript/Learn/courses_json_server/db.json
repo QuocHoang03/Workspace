@@ -1,0 +1,14 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "title": "Khoa hoc Java cho nguoi moi bat dau",
+      "description": "Mụ phù thủy Frau Perchta, ác quỷ Krampus... là những sinh vật ma quỷ đáng sợ trong Giáng sinh."
+    },
+    {
+      "title": "Khoa hoc Python cho nguoi moi bat dau",
+      "description": "Mụ phù thủy Frau Perchta, ác quỷ Krampus... là những sinh vật ma quỷ đáng sợ trong Giáng sinh.",
+      "id": 2
+    }
+  ]
+}

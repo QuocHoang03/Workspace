@@ -1,0 +1,13 @@
+Student List
+--------------------
+
+M1  Macron  6.0
+B1  Bush  7.0
+H1  Hillary  7.0
+P1  Putin  7.0
+C1  Colin  8.0
+M2  Markel  8.0
+O1  Obama  8.0
+T1  Trump  8.0
+B2  Biden  9.0
+C2  Clinton  9.0
