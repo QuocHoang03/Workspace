@@ -1,0 +1,10 @@
+C1 Colin 8
+B1 Bush 7
+C2 Clinton 9
+H1 Hillary 7
+O1 Obama 8
+T1 Trump 8
+B2 Biden 9
+P1 Putin 7
+M1 Macron 6
+M2 Markel 8

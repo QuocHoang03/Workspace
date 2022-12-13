@@ -1,0 +1,25 @@
+========== String ==========
+s.length() : độ dài chuỗi
+s.charAt() : lấy ra giá trị theo index
+s.getChars() : lấy ra hết mảng
+s.getByte() : lấy giá trị bảng mã assci
+s.equals() : so sánh 2 chuỗi giống nhau có phân biệt hoa thường
+s.equalsIgnoreCase() : so sánh 2 chuỗi giống nhau không phân biệt hoa thường
+s.compareTo() : âm <, 0 =, dương >
+s.compareToIgnoreCase() : tương tự compareTo nhưng không tính hoa thường
+s.regionMathches() : so sánh chuỗi (index 1,s2,index2,endIndex2)
+s.starWith() : hàm kiểm tra chuỗi bắt đầu bằng
+s.endWith() : hàm kiểm tra chuỗi bắt đầu bằng
+s.indexOf() : tìm chuỗi trong chuỗi
+s.lastIndexOf() : tìm chuỗi trong chuỗi 
+s.concat() : nối chuỗi
+s.replaceAll() : thay thế
+s.toLowerCase() : chuyển về viết thường
+s.toUpperCase() : chuyển về viết hoa
+s.trim() : xoá đi khoảng trắng đầu và cuối chuỗi
+s.subString() : cắt chuỗi con
+
+========== Array ==========
+a.toString() : in mảng
+a.clone() : sao chép mảng
+a.arraycopy() : sao chép tuỳ chọn phần tử (a1,indexStart,a2,indexStart,a1.length)
