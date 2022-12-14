@@ -42,10 +42,12 @@
                                 <img src="./assets/img/qr_code.png" alt="QR code" class="header__qr-img">
                                 <div class="header__qr-apps">
                                     <a href="" class="header__qr-link">
-                                        <img src="./assets/img/google_play.png" alt="Google Play" class="header__qr-download-img">
+                                        <img src="./assets/img/google_play.png" alt="Google Play"
+                                            class="header__qr-download-img">
                                     </a>
                                     <a href="" class="header__qr-link">
-                                        <img src="./assets/img/app_store.png" alt="App Store" class="header__qr-download-img">
+                                        <img src="./assets/img/app_store.png" alt="App Store"
+                                            class="header__qr-download-img">
                                     </a>
                                 </div>
                             </div>
@@ -75,28 +77,37 @@
                                 <ul class="header__notify-list">
                                     <li class="header__notify-item header__notify-item--viewed">
                                         <a href="" class="header__notify-link">
-                                            <img src="./assets/img/notify_ex_while.jpg" alt="" class="header__notify-img">
+                                            <img src="./assets/img/notify_ex_while.jpg" alt=""
+                                                class="header__notify-img">
                                             <div class="header__notify-info">
-                                                <span class="header__notify-name">Xác thực chính hãng nguồn gốc các sản phẩm Ohui</span>
-                                                <span class="header__notify-description">HiddenTag là giải pháp xác thực hàng chính hãng bằng công nghệ tiên tiến nhất hiện nay</span>
+                                                <span class="header__notify-name">Xác thực chính hãng nguồn gốc các sản
+                                                    phẩm Ohui</span>
+                                                <span class="header__notify-description">HiddenTag là giải pháp xác thực
+                                                    hàng chính hãng bằng công nghệ tiên tiến nhất hiện nay</span>
                                             </div>
                                         </a>
                                     </li>
                                     <li class="header__notify-item header__notify-item--viewed">
                                         <a href="" class="header__notify-link">
-                                            <img src="./assets/img/notify_ex_while.jpg" alt="" class="header__notify-img">
+                                            <img src="./assets/img/notify_ex_while.jpg" alt=""
+                                                class="header__notify-img">
                                             <div class="header__notify-info">
-                                                <span class="header__notify-name">Sale Sốc bộ dưỡng Ohui The First Tái tạo trẻ hoá da SALE OFF 70%</span>
-                                                <span class="header__notify-description">Giá chỉ còn 375.000 (giá gốc: 1.250.000 vnd)</span>
+                                                <span class="header__notify-name">Sale Sốc bộ dưỡng Ohui The First Tái
+                                                    tạo trẻ hoá da SALE OFF 70%</span>
+                                                <span class="header__notify-description">Giá chỉ còn 375.000 (giá gốc:
+                                                    1.250.000 vnd)</span>
                                             </div>
                                         </a>
                                     </li>
                                     <li class="header__notify-item header__notify-item--viewed">
                                         <a href="" class="header__notify-link">
-                                            <img src="./assets/img/notify_ex_while.jpg" alt="" class="header__notify-img">
+                                            <img src="./assets/img/notify_ex_while.jpg" alt=""
+                                                class="header__notify-img">
                                             <div class="header__notify-info">
-                                                <span class="header__notify-name">Ohui chính thức ra mắt dòng son lì mới THE FIRST GENITURE LIPSTICK</span>
-                                                <span class="header__notify-description">Một làn môi căng mềm, quyến rũ với sắc màu nổi bật luôn là điều mà các quý cô ao ước</span>
+                                                <span class="header__notify-name">Ohui chính thức ra mắt dòng son lì mới
+                                                    THE FIRST GENITURE LIPSTICK</span>
+                                                <span class="header__notify-description">Một làn môi căng mềm, quyến rũ
+                                                    với sắc màu nổi bật luôn là điều mà các quý cô ao ước</span>
                                             </div>
                                         </a>
                                     </li>
@@ -112,13 +123,14 @@
                                 Trợ giúp
                             </a>
                         </li>
-                        <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">Đăng ký</li>
+                        <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">Đăng
+                            ký</li>
                         <li class="header__navbar-item header__navbar-item--strong">Đăng nhập</li>
                     </ul>
                 </nav>
 
                 <!-- ===== header search ===== -->
-                
+
 
             </div>
 
@@ -130,17 +142,61 @@
         </div>
 
         <footer class="footer">
-            
+
         </footer>
     </div>
 
     <!-- Modal layout -->
     <div class="modal">
         <div class="modal__overlay"></div>
-        
+
         <div class="modal__body">
-            <div class="modal__inner">
-                
+
+            <!-- Authen form -->
+            <div class="auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng Ký</h3>
+                        <span class="auth-form__switch-btn">Đăng Nhập</span>
+                    </div>
+
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+                        </div>
+                    </div>
+
+                    <!-- aside : bổ sung -->
+                    <div class="auth-form__aside">
+                        <p class="auth-form__policy-text">
+                            Bằng việc đăng kí, bạn đã đồng ý với shopee về
+                            <a href="" class="auth-form__text-link">Điều khoản dịch vụ</a> &
+                            <a href="" class="auth-form__text-link">Chính sách bảo mật</a>
+                        </p>
+                    </div>
+
+                    <div class="auth-form__controls">
+                        <button class="btn">TRỞ LẠI</button>
+                        <button class="btn btn--primary">ĐĂNG KÝ</button>
+                    </div>
+
+                </div>
+                <div class="auth-form__socials">
+                    <a href="" class="btn btn--with-icon">
+                        <i class="fa-brands fa-square-facebook"></i>
+                        Kết nối với facebook
+                    </a>
+                    <a href="" class="btn btn--with-icon">
+                        <i class="fa-brands fa-google"></i>
+                        Kết nối với google
+                    </a>
+                </div>
             </div>
         </div>
     </div>
