@@ -93,7 +93,7 @@ html {
 .btn {
     line-height: 1.6rem;
     color: var(--text-color);
-    min-width: 142px;
+    min-width: 124px;
     height: 34px;
     text-decoration: none;
     border: none;
