@@ -1,28 +1,30 @@
-public class Student {
-    private String maSv;
-    private String tenSv;
+public class Student{
+    private String maSinhVien;
+    private String tenSinhVien;
     private String khoaHoc;
     private float diem;
-    public Student(String maSv, String tenSv, String khoaHoc, float diem) {
-        this.maSv = maSv;
-        this.tenSv = tenSv;
+
+    
+    public Student(String maSinhVien) {
+        this.maSinhVien = maSinhVien;
+    }
+    public Student(String maSinhVien, String tenSinhVien, String khoaHoc, float diem) {
+        this.maSinhVien = maSinhVien;
+        this.tenSinhVien = tenSinhVien;
         this.khoaHoc = khoaHoc;
         this.diem = diem;
     }
-    public Student(String maSv) {
-        this.maSv = maSv;
+    public String getMaSinhVien() {
+        return maSinhVien;
     }
-    public String getMaSv() {
-        return maSv;
+    public void setMaSinhVien(String maSinhVien) {
+        this.maSinhVien = maSinhVien;
     }
-    public void setMaSv(String maSv) {
-        this.maSv = maSv;
+    public String getTenSinhVien() {
+        return tenSinhVien;
     }
-    public String getTenSv() {
-        return tenSv;
-    }
-    public void setTenSv(String tenSv) {
-        this.tenSv = tenSv;
+    public void setTenSinhVien(String tenSinhVien) {
+        this.tenSinhVien = tenSinhVien;
     }
     public String getKhoaHoc() {
         return khoaHoc;
@@ -38,7 +40,32 @@ public class Student {
     }
     @Override
     public String toString() {
-        return "Student [maSv=" + maSv + ", tenSv=" + tenSv + ", khoaHoc=" + khoaHoc + ", diem=" + diem + "]";
+        return "Student [maSinhVien=" + maSinhVien + ", tenSinhVien=" + tenSinhVien + ", khoaHoc=" + khoaHoc + ", diem="
+                + diem + "]";
     }
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + ((maSinhVien == null) ? 0 : maSinhVien.hashCode());
+        return result;
+    }
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Student other = (Student) obj;
+        if (maSinhVien == null) {
+            if (other.maSinhVien != null)
+                return false;
+        } else if (!maSinhVien.equals(other.maSinhVien))
+            return false;
+        return true;
+    }
+    
     
 }

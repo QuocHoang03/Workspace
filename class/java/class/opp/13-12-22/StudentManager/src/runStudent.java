@@ -1,52 +1,90 @@
 import java.util.Scanner;
 
-public class runStudent {
+public class runStudent{
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-
 		StudentList dssv = new StudentList();
 		int luaChon = 0;
 		do {
-			System.out.println("MENU ---------- ");
-			System.out.println("Vui long chon chuc nang: ");
-			System.out.println(
-					"1. Them sinh vien vao danh sach.\n"
-							+ "2. In danh sach sinh vien ra man hinh.\n"
-							+ "3. Tim kiem tat ca sinh vien dua tren Ten duoc nhap tu ban phim.\n"
-							+ "4. Xoa mot sinh vien ra khoi danh sach dua tren ma sinh vien.\n");
+			System.out.println("---------- MENU ----------");
+			System.out.println("Vui long lua chon chuc nang:");
+
+			System.out.print("1. Thêm sinh viên vào danh sách.\n"
+			+"2. Tim sinh vien theo ten.\n"
+			+"3. Xoa sinh vien theo ma sinh vien.\n"
+			+"4. In sinh vien cung khoa hoc.\n"
+			+"5. In danh sách sinh viên ra màn hình.\n"
+			+"0. Thoat khoi chuong trinh.\n"
+			+"Chon: "
+			);
 			luaChon = sc.nextInt();
 			sc.nextLine();
-
-			if (luaChon == 1) {
-				// 1. Thêm sinh viên vào danh sách.
-				System.out.print("Nhap ma sinh vien: ");
-				String maSinhVien = sc.nextLine();
-				System.out.print("Nhap ho va ten: ");
-				String hoVaTen = sc.nextLine();
-				System.out.print("Nhap khoa hoc: ");
-				String khoaHoc = sc.nextLine();
-				System.out.print("Nhap diem : ");
-				float diem = sc.nextFloat();
-				Student sv = new Student(maSinhVien, hoVaTen, khoaHoc, diem);
-				dssv.themSinhVien(sv);
-			} else if (luaChon == 2) {
-				// 2. In danh sách sinh viên ra màn hình.
-				dssv.inDanhSachSinhVien();
-
-			} else if (luaChon == 3) {
-				// 3. Tìm kiếm tất cả sinh viên dựa trên Tên được nhập từ bàn phím.
-				System.out.println("Nhap ho va ten: ");
-				String hoVaTen = sc.nextLine();
-				System.out.println("Ket qua tim kiem: ");
-				dssv.timSinhVien(hoVaTen);
-			} else if (luaChon == 4) {
-				// 4. Xóa một sinh viên ra khỏi danh sách dựa trên mã sinh viên.
-				System.out.print("Nhap ma sinh vien: ");
-				String maSv = sc.nextLine();
-				Student sv = new Student(maSv);
-				System.out.println("Xoa sinh vien trong danh sach: " + dssv.xoaSinhVien(sv));
+			switch(luaChon){
+				case 1:
+					System.out.print("Nhap ma sinh vien: ");
+						String maSinhVien = sc.nextLine();
+					System.out.print("Nhap ten sinh vien: ");
+						String tenSinhVien = sc.nextLine();
+					System.out.print("Nhap khoa hoc: ");
+						String khoaHoc = sc.nextLine();
+					System.out.print("Nhap diem: ");
+						Float diem = sc.nextFloat();
+					Student svNew = new Student(maSinhVien, tenSinhVien, khoaHoc, diem);
+					dssv.themSinhVien(svNew);;
+					break;
+				case 2:
+					System.out.print("Nhap ten sinh vien: ");
+						String newTen = sc.nextLine();
+					System.out.println("Danh sach sinh vien theo ten: ");
+						dssv.timSinhVienTheoTen(newTen);
+					break;
+				case 3:
+					System.out.print("Nhap ma sinh vien: ");
+						String newMaSv = sc.nextLine();
+					Student sv = new Student(newMaSv);
+					System.out.println("Xoa sinh vien trong danh sach: "+dssv.xoaSinhVienTheoMa(sv));
+					break;
+				case 4:
+					System.out.print("Nhap ten khoa hoc: ");
+					String newKhoaHoc = sc.nextLine();
+					System.out.println("Danh sach sinh vien: ");
+					dssv.inSinhVienCungKhoaHoc(newKhoaHoc);
+					break;
+				case 5:
+					System.out.println("Danh sach sinh vien: ");
+					dssv.xuatSinhVien();
+					break;
 			}
+			System.out.println();
 		} while (luaChon != 0);
 		sc.close();
 	}
+}import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class runPerson {
+    private ArrayList<Employee>employee;
+    private ArrayList<Student>student;
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Nhap 1 de nhap Employee hoac Nhap 2 de nhap Studen");
+        int n = sc.nextInt();
+        switch(n){
+            case 1:
+                System.out.println("Nhap name: ");
+                    String name = sc.nextLine();
+                System.out.println("Nhap age: ");
+                    String age = sc.nextLine();
+                System.out.println("Nhap hireDay: ");
+                    String hireDay = sc.nextLine();
+                System.out.println("Nhap salary: ");
+                    String salary = sc.nextLine();
+                Employee employee = new 
+
+                break;
+        }
+
+        
+    }
 }
