@@ -921,7 +921,7 @@
     position: relative;
 }
 
-.category-item::before{
+.category-item::before {
     content: "";
     border-top: 1px solid #E1E1E1;
     position: absolute;
@@ -930,7 +930,7 @@
     left: 20px;
 }
 
-.category-item:first-child::before{
+.category-item:first-child::before {
     display: none;
 }
 
@@ -1235,28 +1235,28 @@ i.home-product-item__like-icon-fill {
 
 }
 
-.home-product__pagination{
+.home-product__pagination {
     margin: 48px 0 32px 0;
 }
 
 /* footer */
-.footer{
+.footer {
     border-top: 4px solid var(--primary-color);
     padding-top: 16px;
 }
 
-.footer__heading{
+.footer__heading {
     font-size: 1.4rem;
     text-transform: uppercase;
     color: var(--text-color);
 }
 
-.footer-list{
+.footer-list {
     padding-left: 0;
     list-style: none;
 }
 
-.footer-item__link{
+.footer-item__link {
     text-decoration: none;
     font-size: 1.2rem;
     color: #737373;
@@ -1266,20 +1266,20 @@ i.home-product-item__like-icon-fill {
     align-items: center;
 }
 
-.footer-item__link:hover{
+.footer-item__link:hover {
     color: var(--primary-color);
 }
 
-.footer-item-icon{
+.footer-item-icon {
     margin: -1px 8px 0 0;
     font-size: 1.6rem;
 }
 
-.footer__download{
+.footer__download {
     display: flex;
 }
 
-.footer__downloas-qr{
+.footer__downloas-qr {
     border: 1px solid var(--border-color);
     height: 80px;
     width: 80px;
@@ -1288,7 +1288,7 @@ i.home-product-item__like-icon-fill {
     /* object-fit: contain; */
 }
 
-.footer__download-apps{
+.footer__download-apps {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -1296,22 +1296,22 @@ i.home-product-item__like-icon-fill {
     margin-left: 16px;
 }
 
-.footer__download-app-link{
+.footer__download-app-link {
     text-decoration: none;
     color: transparent;
 }
 
-.footer__download-app-img{
+.footer__download-app-img {
     height: 16px;
 }
 
-.footer__bottom{
+.footer__bottom {
     margin-top: 36px;
     padding: 24px 0 24px 0;
     background-color: #f5f5f5;
 }
 
-.footer__text{
+.footer__text {
     margin: 0;
     color: #737373;
     text-align: center;
