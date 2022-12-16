@@ -178,13 +178,10 @@
 
 /* ===== header QR code ===== */
 .header__qr {
-<<<<<<< HEAD
-=======
     z-index: 1;
     background-color: var(--white-color);
     width: 186px;
     position: absolute;
->>>>>>> 5891c08b3c9315eb833679e6edf48afe607cf2eb
     left: 0;
     top: 118%;
     z-index: 1;
@@ -216,8 +213,6 @@
     display: flex;
     justify-content: space-between;
 }
-
-.header__qr-link {}
 
 .header__qr-link:nth-child(1) {
     margin-left: 11px;
@@ -395,8 +390,6 @@
     color: var(--primary-color);
     cursor: pointer;
 }
-
-.auth-form__form {}
 
 .auth-form__input {
     height: 40px;
@@ -991,8 +984,6 @@
     margin-right: 16px;
 }
 
-.btn {}
-
 .home-filter__btn {
     margin-right: 12px;
     min-width: 90px;
@@ -1168,8 +1159,6 @@ i.home-product-item__like-icon-fill {
 .home-product-item__brand {
     margin-right: auto;
 }
-
-.home-product-item__origin-name {}
 
 .home-product-item__favourite {
     position: absolute;
