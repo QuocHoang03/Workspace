@@ -24,6 +24,7 @@ function renderCourses(courses) {
             <li class="course-item-${course.id}">
                 <h4>${course.title}</h4>
                 <p>${course.description}</p>
+                
                 <button onclick="handleDeleteCourse(${course.id})">Delete</button>
             </li>
         `;
@@ -53,10 +54,12 @@ function handleCourse() {
     createBtn.onclick = function () {
         var title = document.querySelector('input[name="title"]').value;
         var description = document.querySelector('input[name="description"]').value;
+        var img = document.querySelector('input[name="img"]').value;
 
         formData = {
             title: title,
             description: description,
+            img:img,
         }
         createCourse(formData, function () {
             getCourses(renderCourses);
