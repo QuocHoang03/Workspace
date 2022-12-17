@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    transition: 0.5s;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.slidewrapper {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.slidewrapper .nutchuyen {
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.nutchuyen ul li {
+    display: inline-block;
+    border: 3px solid white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 20px 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.nutchuyen ul li:hover,
+.nutchuyen ul li.active {
+    background: red;
+}
+
+.ndslide .hinh {
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.slide {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.slide .tgduoi1,
+.slide .tgduoi2,
+.slide .tgtren,
+.slide .noidung {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+}
+
+.slide .tgtren {
+    right: -5%;
+    opacity: 0.4;
+}
+
+ul li.active .slide .tgtren {
+    animation: hientgtren 2s forwards;
+    /* animation-delay: 0.2s; */
+}
+
+@keyframes hientgtren {
+    from {
+        transform: translateX(100%) translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0) translateY(0);
+        opacity: 0.3;
+    }
+}
+
+
+.slide .tgduoi1 {
+    opacity: 0.4;
+    top: -30%;
+}
+
+ul li.active .slide .tgduoi1 {
+    animation: hientgduoi1 2s forwards;
+}
+
+@keyframes hientgduoi1 {
+    from {
+        transform: translateX(-100%) translateY(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0) translateY(0);
+        opacity: 0.3;
+    }
+}
+
+.slide .tgduoi2 {
+    opacity: 0.6;
+    top: -10%;
+}
+
+ul li.active .slide .tgduoi2 {
+    animation: hientgduoi2 2s forwards;
+    animation-delay: 0.2s;
+}
+
+@keyframes hientgduoi2 {
+    from {
+        transform: translateX(-100%) translateY(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0) translateY(0);
+        opacity: 0.5;
+    }
+}
+
+.slide .noidung {
+    width: 20%;
+    left: 10%;
+    z-index: 3;
+    opacity: 1;
+    top: 46%;
+    color: wheat;
+    transition: 0.6s;
+}
+
+.slide small {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px 0;
+    display: block;
+    text-decoration: underline;
+}
+
+.slide h2 {
+    font-size: 80px;
+    font-weight: normal;
+}
+
+ul li.active .noidung h2,
+ul li.active .noidung small,
+ul li.active .noidung p,
+ul li.active .noidung .nut {
+    opacity: 0;
+    animation: hiennd 3s forwards;
+}
+
+@keyframes hiennd {
+    from {
+        transform: translateX(-30%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+ul li.active .noidung h2 {
+    animation-delay: 0.8s
+}
+
+ul li.active .noidung small {
+    animation-delay: 1s
+}
+
+ul li.active .noidung p {
+    animation-delay: 1.2s
+}
+
+ul li.active .noidung .nut {
+    animation-delay: 1.4s
+}
+
+
+.ndslide ul {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* overflow: hidden; */
+}
+
+.ndslide ul li {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+
+}
+
+.ndslide ul li.active {
+    opacity: 1;
+
+}
