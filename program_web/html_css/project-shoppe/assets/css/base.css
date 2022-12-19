@@ -6,7 +6,7 @@
     --border-color: #dbdbdb;
     --start-gold-color: #FFCE3D;
 
-    --header-height:120px;
+    --header-height: 120px;
     --navbar-height: 34px;
     --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
     --header-sort-bar-height: 46px;
@@ -36,19 +36,19 @@ html {
     margin-right: -5px;
 }
 
-.grid__column-2{
+.grid__column-2 {
     padding-left: 5px;
     padding-right: 5px;
     width: 16.6667%;
 }
 
-.grid__column-2-4{
+.grid__column-2-4 {
     padding-left: 5px;
     padding-right: 5px;
     width: 20%;
 }
 
-.grid__column-10{
+.grid__column-10 {
     padding-left: 5px;
     padding-right: 5px;
     width: 83.3334%;
@@ -147,7 +147,7 @@ html {
 }
 
 /* selection */
-.select-input{
+.select-input {
     position: relative;
     min-width: 200px;
     height: 34px;
@@ -159,22 +159,22 @@ html {
     justify-content: space-between;
 }
 
-.select-input:hover .select-input__list{
+.select-input:hover .select-input__list {
     display: block;
 }
 
-.select-input__label{
+.select-input__label {
     font-size: 1.4rem;
 }
 
-.select-input-icon{
+.select-input-icon {
     font-size: 1.4rem;
-    color: rgba(131,131,131);
+    color: rgba(131, 131, 131);
     position: relative;
     top: 1px;
 }
 
-.select-input__list{
+.select-input__list {
     z-index: 1;
     display: none;
     position: absolute;
@@ -187,7 +187,7 @@ html {
     background-color: var(--white-color);
 }
 
-.select-input__link{
+.select-input__link {
     display: block;
     padding: 4px 0;
     font-size: 1.2rem;
@@ -195,33 +195,33 @@ html {
     text-decoration: none;
 }
 
-.select-input__link:hover{
+.select-input__link:hover {
     color: var(--primary-color);
 }
 
 /* pagination */
-.pagination{
+.pagination {
     display: flex;
     align-items: center;
     justify-content: center;
     list-style: none;
 }
 
-.pagination-item{
+.pagination-item {
     margin: 0 12px;
 }
 
-.pagination-item--active .pagination-item__link{
+.pagination-item--active .pagination-item__link {
     color: var(--white-color);
     background-color: var(--primary-color);
 }
 
-.pagination-item--active .pagination-item__link:hover{
+.pagination-item--active .pagination-item__link:hover {
     background-color: #ed5c3f;
 }
 
-.pagination-item__link{
-    --height:30px;
+.pagination-item__link {
+    --height: 30px;
     display: block;
     font-size: 2rem;
     min-width: 40px;
@@ -238,4 +238,3 @@ html {
     font-size: 1.5rem;
     font-weight: 300;
 }
-
