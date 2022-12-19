@@ -1,3 +1,6 @@
+.app{
+    overflow: hidden;
+}
 /* ========== header ========== */
 .header {
     height: var(--header-height);
@@ -555,6 +558,11 @@
     text-decoration: none;
     color: transparent;
     display: block;
+    line-height: 0;
+}
+
+.header__search-checkbox:checked ~ .header__search{
+    display: flex;
 }
 
 .header__logo-img {
@@ -569,6 +577,16 @@
     background-color: var(--white-color);
     display: flex;
     align-items: center;
+}
+
+.header__mobile-search{
+    padding: 0 12px;
+
+}
+
+.header__mobile-search-icon{
+    font-size: 2.6rem;
+    color: var(--white-color);
 }
 
 .header__search-input-wrap {
@@ -598,6 +616,9 @@
     display: inline-block;
     position: relative;
     padding: 0 12px;
+
+    /* Bỏ highlight thẻ a */
+    -webkit-tap-highlight-color: transparent;
 }
 
 .header__cart-wrap:hover .header__cart-list {
@@ -1020,6 +1041,63 @@
     color: var(--primary-color);
 }
 
+/* Mobile category */
+
+.mobile-category{
+
+}
+
+.mobile-category__list{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    max-width: 100%;
+    overflow-x: auto;
+
+}
+
+.mobile-category__list::-webkit-scrollbar{
+    display: none;
+}
+
+.mobile-category__item{
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+
+.mobile-category__item:nth-last-of-type(3n + 1) .mobile-category__link{
+    background-color: #87AFD8;
+}
+.mobile-category__item:nth-last-of-type(3n + 2) .mobile-category__link{
+    background-color: #76C9BD;
+}
+.mobile-category__item:nth-last-of-type(3n + 3) .mobile-category__link{
+    background-color: #88CF81;
+}
+
+.mobile-category__link{
+    --line-height:2rem;
+    width: 108px;
+    font-weight: 300;
+    display: block;
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 1.4rem;
+    text-align: center;
+    border-radius: 4px;
+    
+    line-height: var(--line-height);
+    height: calc(var(--line-height) * 2);
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    
+
+    /* Bỏ hiệu ứng user */
+    user-select: none;
+    -webkit-user-select: none;
+}
 
 
 /* ===== home sort + filter ===== */
@@ -1291,6 +1369,7 @@ i.home-product-item__like-icon-fill {
 
 .home-product__pagination {
     margin: 48px 0 32px 0;
+    padding-left: 0;
 }
 
 /* footer */
