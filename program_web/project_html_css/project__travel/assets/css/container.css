@@ -1,0 +1,11 @@
+/* ========== Container ==========  */
+
+/* ===== Container slider =====  */
+.container-slider{
+    height: var(--slider-height);
+    width: 100%;
+}
+
+.slider__img{
+    width: 100%;
+}

@@ -1,9 +1,5 @@
 /* Mobile & Tablet */
 @media (max-width: 1023px) {
-    :root {
-        --header-height: 68px;
-        --navbar-height: 0px;
-    }
 
     .hide-on-mobile-tablet {
         display: none;
@@ -54,6 +50,10 @@
 
 /* Tablet */
 @media (min-width: 740px) and (max-width:1023px) {
+    :root {
+        --header-height: 68px;
+        --navbar-height: 0px;
+    }
     .hide-on-tablet {
         display: none;
     }
@@ -61,6 +61,10 @@
 
 /* Mobile */
 @media (max-width: 739px) {
+    :root {
+        --header-height: 54px;
+        --navbar-height: 0px;
+    }
     .hide-on-mobile {
         display: none;
     }
@@ -132,5 +136,20 @@
 
     .footer__content{
         padding: 0 16px;
+    }
+
+    .footer__heading{
+        text-align: center;
+    }
+    .footer__download,
+    .footer-item__link{
+        justify-content: center;
+    }
+    .footer__download-apps{
+        flex: unset;
+    }
+    .footer__download-apps-link{
+        display: block;
+        padding: 6px 8px;
     }
 }

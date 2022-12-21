@@ -1,0 +1,43 @@
+:root {
+    --btn-orange-color:#f3a46b;
+    --btn-yellow-color:#ffd205;
+    --btn-Violet-color:#ba71da;
+    --text-color: #a3a3a3;
+    --white-color: #fff;
+    --black-color: #000;
+
+    --header-height: 78px;
+    --slider-height: 800px;
+}
+
+* {
+    /* Kế thừa border-box */
+    box-sizing: inherit;
+}
+
+html {
+    /* 16px */
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+/* btn */
+.btn{
+    /* min-height: 30px;
+    min-width: 100px; */
+    color: var(--white-color);
+    text-decoration: none;
+    border: none;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--btn-orange-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
