@@ -1,11 +1,294 @@
 /* ========== Container ==========  */
 
 /* ===== Container slider =====  */
-.container-slider{
+.container-slider {
+    display: block;
     height: var(--slider-height);
+    width: 100%;
+    position: relative;
+}
+
+/* tour */
+.slider__tour {
+    position: relative;
+    display: none;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider__tour--active {
+    display: block;
+}
+
+.slider__tour-img {
+    display: block;
     width: 100%;
 }
 
-.slider__img{
+.slider__tour-next-block{
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    transform: translateY(-50%);
+    padding: 0 35px;
+    justify-content: space-between;
+}
+
+.slider__tour-next-block-icon{
+    cursor: pointer;
+    font-size: 4rem;
+    color: var(--white-color);
+}
+
+/* tour block */
+.slider__tour-block {
+    top: 17%;
+    left: 53%;
+    width: 475px;
+    position: absolute;
+}
+
+/* tour block heading */
+@keyframes moveCircleX {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-2px);
+    }
+
+    50% {
+        transform: translateX(0);
+    }
+
+    75% {
+        transform: translateX(2px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveCircleY {
+    0% {
+        transform: translatey(0);
+    }
+
+    25% {
+        transform: translatey(2.5px);
+    }
+
+    50% {
+        transform: translatey(5px);
+    }
+
+    75% {
+        transform: translatey(2.5px);
+    }
+
+    100% {
+        transform: translatey(0);
+    }
+}
+
+.slider__tour-block-animition {
+    height: 116px;
+    position: relative;
+    margin-bottom: 55px;
+}
+
+.slider__tour-block-animition-heading{
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    animation: moveCircleX 2s linear infinite;
+}
+
+.slider__tour-block-heading {
+    left: 0;
+    position: absolute;
+    animation: moveCircleY 2s linear infinite;
+}
+
+.slider__tour-block-heading h3:first-child,
+.slider__tour-block-heading h3:last-child {
+    margin: 0;
+    height: 58px;
+    font-size: 4.8rem;
+    color: var(--white-color);
+    background-color: #555555;
+    font-weight: 700;
+    padding: 5px 20px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+    transform: rotate(-2deg);
+}
+
+.slider__tour-block-heading h3:first-child span,
+.slider__tour-block-heading h3:last-child span {
+    color: #eca46a;
+    margin: 0 14px;
+}
+
+.slider__tour-block-heading h3:first-child {
+    margin-bottom: 3px;
+}
+
+.slider__tour-block-heading h3:last-child {
+    margin: 0 20px 40px;
+}
+
+.slider__tour-block-btn {
+    width: 224px;
+    height: 48px;
+}
+
+/* tour block content */
+.slider__tour-block-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider__tour-block-content p {
+    display: flex;
+    margin: 0 0 30px 0;
+}
+
+.slider__tour-block-content-icon {
+    color: var(--white-color);
+    font-size: 1.6rem;
+    margin-right: 16px;
+}
+
+.slider__tour-block-content p span {
+    font-size: 1.9rem;
+    color: var(--white-color);
+    width: 310px;
+    display: block;
+    letter-spacing: 1px;
+    line-height: 3rem;
+    font-weight: 400;
+}
+
+/* tour block btn */
+.slider__tour-block-btn {
+    position: relative;
+    margin: 32px auto 0;
+    transition: 0.3s;
+}
+
+.slider__tour-block-btn:hover{
+    cursor: pointer;
+    border-radius: 0;
+}
+
+.slider__tour-block-btn-price{
+    content: "";
+    position: absolute;
+    top: -25px;
+    right: -25px;
+    width: 50px;
+    height: 50px;
+    color: var(--white-color);
+    background-color: #555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+/* ===== Container content =====  */
+.container-content{
+    padding-top: 216px;
+    min-height: 500px;
+}
+
+.content__paris{
+    margin-top: 60px;
+    height: 660px;
+    width: 100%;
+}
+
+.content__paris-block{
+    display: flex;
+    flex-direction: column;
+}
+
+.content__paris-about{
+    padding: 70px;
+}
+
+.content__paris-about-title{
+    font-size: 1.4rem;
+    color: #9a9a9a;
+    letter-spacing: 1.4px;
+}
+
+.content__paris-about-heading{
+    font-size: 3.6rem;
+    color: #555;
+    margin-top: 30px;
+    font-weight: 600    ;
+}
+
+.content__paris-about-content{
+    display: flex;
+    margin-top: 45px;
+    font-size: 1.4rem;
+    color: #9a9a9a;
+}
+
+.content__paris-about-content span{
+    flex: 1;
+    padding: 0px 12px;
+    letter-spacing: 1px;
+    line-height: 3rem;
+}
+
+.content__paris-about-btn{
+    margin-top: 44px;
+    width: 222px;
+    height: 44px;
+}
+
+/* paris list */
+.content__paris-list{
+    flex: 1;
+    height: 100%;
+    background-color: aqua;
+}
+
+/* video */
+.content__paris-video{
+    height: 660px;
+    background-image: url(http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/11/para-07.jpg?id=1845);
+    background-position: center;
+    background-size: cover;
+    background-color: #a09334;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content__paris-video-link{
+    display: block;
+    width: 80px;
+    height: 80px;
+    text-decoration: none;
+
+}
+
+.content__paris-video-play{
+    display: block;
     width: 100%;
 }
