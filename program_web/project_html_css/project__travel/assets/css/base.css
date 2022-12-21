@@ -7,7 +7,9 @@
     --black-color: #000;
 
     --header-height: 78px;
-    --slider-height: 800px;
+    --slider-height: 1060px;
+    --services-height:710px;
+    --sale-height:610px;
 }
 
 * {
@@ -41,3 +43,4 @@ html {
     align-items: center;
     border-radius: 30px;
 }
+
